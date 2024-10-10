@@ -31,10 +31,10 @@ afterEvaluate {
         repositories {
             maven {
                 name = "GitHubPackages"
-                url = uri("https://maven.pkg.github.com/tangem/tangem-sdk-android")
+                url = uri("https://maven.pkg.github.com/C0C41N/tangem-sdk-android")
                 credentials {
-                    username = "$githubUser"
-                    password = "$githubPass"
+                    username = System.getenv("GIT_TANGEM_USER")
+                    password = System.getenv("GIT_TANGEM_TOKEN")
                 }
             }
         }
