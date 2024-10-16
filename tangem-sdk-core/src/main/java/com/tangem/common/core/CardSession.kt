@@ -356,7 +356,7 @@ class CardSession(
      * Stops the current session with the text message.
      * @param message If null, the default message will be shown.
      */
-    private fun stop(message: Message? = null) {
+    fun stop(message: Message? = null) {
         stopSessionIfActive()
         viewDelegate.onSessionStopped(message)
     }
