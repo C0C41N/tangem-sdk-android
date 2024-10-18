@@ -48,7 +48,7 @@ class SignResponse(
  * @property walletPublicKey Public key of the wallet, using for sign.
  * @property derivationPath: Derivation path of the wallet. Optional. COS v. 4.28 and higher,
  */
-internal class SignCommand(
+class SignCommand(
     private val hashes: Array<ByteArray>,
     private val walletPublicKey: ByteArray,
     private val derivationPath: DerivationPath? = null,
